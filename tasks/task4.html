@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-4</title>
+</head>
+<body>
+    <h1>Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: <br> кількість парних, кількість додатних, кількість більших за 100.</h1>
+
+    <script>
+        // 1. Вводимо дані
+        function getSomeResults(a, b, c) {
+            let evenCount = 0;
+            let positiveCount = 0;
+            let greaterThan100Count = 0;
+            
+            // Перевіряємо кожне число
+            if (a % 2 === 0) {
+                evenCount++;
+            }
+            if (b % 2 === 0) {
+                evenCount++;
+            }
+            if (c % 2 === 0) {
+                evenCount++;
+            }
+            
+            if (a > 0) {
+                positiveCount++;
+            }
+            if (b > 0) {
+                positiveCount++;
+            }
+            if (c > 0) {
+                positiveCount++;
+            }
+            
+            if (a > 100) {
+                greaterThan100Count++;
+            }
+            if (b > 100) {
+                greaterThan100Count++;
+            }
+            if (c > 100) {
+                greaterThan100Count++;
+            }
+            
+            // Повертаємо результати
+            return {
+                evenCount: evenCount,
+                positiveCount: positiveCount,
+                greaterThan100Count: greaterThan100Count
+            };
+        }
+        // 2. Знаходимо результат
+        let results = getSomeResults(4, -2, 150);
+        // 3. Виводимо результат
+        document.write(`<h2>Кількість парних чисел: ${results.evenCount}</h2>`);
+        document.write(`<h2>Кількість додатних чисел: ${results.positiveCount}</h2>`);
+        document.write(`<h2>Кількість чисел, більших за 100: ${results.greaterThan100Count}</h2>`);
+
+    </script>
+</body>
+</html>

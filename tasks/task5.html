@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-5</title>
+</head>
+<body>
+    <h1>Створити окремі функції, які переводять:<br>
+        1)	Сантиметри у дюйми;<br>
+        2)	Кілограми у фунти;<br>
+        3)	Кілометри у милі.</h1>
+
+        <script>
+            // Функція для переведення сантиметрів у дюйми
+            function convertCmToInch(cm) {
+                let inch = cm / 2.54;
+                return inch;
+            }
+            // Функція для переведення кілограмів у фунти
+            function convertKgToPound(kg) {
+                let pound = kg * 2.20462;
+                return pound;
+            }
+            // Функція для переведення кілометрів у милі
+            function convertKmToMile(km) {
+                let mile = km / 1.60934;
+                return mile;
+            }
+            // Виклики функцій і виведення результатів
+            let cm = parseInt(prompt('Введіть кількість в cm.'))
+            let kg = parseInt(prompt('Введіть кількість в kg.'))
+            let km = parseInt(prompt('Введіть кількість в km.'))
+
+            let inch = convertCmToInch(cm);
+            let pound = convertKgToPound(kg);
+            let mile = convertKmToMile(km);
+
+            document.write(`<h2> ${cm}cm = ${inch.toFixed(1)}inch </h2>`);
+            document.write(`<h2> ${kg}kg = ${pound.toFixed(1)}pound </h2>`);
+            document.write(`<h2> ${km}km = ${mile.toFixed(1)}mile </h2>`);
+        </script>
+</body>
+</html>

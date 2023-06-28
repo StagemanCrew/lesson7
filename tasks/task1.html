@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+</head>
+<body>
+    <h1>Створити функцію, яка за номером місяця повертає його назву.</h1>
+
+    <script>
+        //1.Вводимо даннi
+
+        //2.Знаходимо результат
+        function getSeason(season) {
+            switch (season) {
+                case 12:return 'December'
+                case 1:return 'January'
+                case 2: return 'February'
+                case 3:return 'March'
+                case 4:return 'April'
+                case 5: return 'May'
+                case 6:return 'June'
+                case 7:return 'July'
+                case 8: return 'August'
+                case 9:return 'September'
+                case 10:return 'October'
+                case 11: return 'November'
+            }
+        }
+
+        //3.Виводимо результат
+        let mySeason = parseInt(prompt('Введiть число вiд 1 до 12.'));
+        alert(getSeason(mySeason));
+        document.write(`<h2>${mySeason} місяць: ${getSeason(mySeason)} </h2>`);
+    </script>
+</body>
+</html>

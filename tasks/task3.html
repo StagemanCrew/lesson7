@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-3</title>
+</head>
+<body>
+    <h1>Створити окремі функції, які для 4 чисел знаходять:<br>
+        1) суму;<br>
+        2) добуток;<br>
+        3) середнє арифметичне;<br>
+        4) мінімальне значення.</h1>
+
+    <script>
+        //1.Вводимо даннi
+        function sumNumber(a, b, c, d) {
+            let sum = a + b + c + d;
+            return sum;
+        }
+
+        function multNumber(a, b, c, d) {
+            let mult = a * b * c * d;
+            return mult;
+        }
+
+        function averageNumber(a, b, c, d) {
+            let average = (a + b + c + d) / 4;
+            return average;
+        }
+
+        function minNumber(a, b, c, d) {
+            return Math.min(a, b, c, d);
+        }
+
+        // Виводимо результат
+        document.write(`<h2> 1) ${sumNumber(2, 2, 2, 2)} </h2>`);
+        document.write(`<h2> 2) ${multNumber(2, 2, 2, 2)} </h2>`);
+        document.write(`<h2> 3) ${averageNumber(2, 2, 2, 2)} </h2>`);
+        document.write(`<h2> 4) ${minNumber(2, 2, 2, 2)} </h2>`);
+
+    </script>
+</body>
+</html>

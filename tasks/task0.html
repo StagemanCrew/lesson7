@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-0</title>
+</head>
+<body>
+    <h1>Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць.</h1>
+
+    <script>
+        //1.Вводимо даннi
+
+        //2.Знаходимо результат
+        function getSeason(season) {
+            // switch (season) {
+            //     case 12:
+            //     case 1:
+            //     case 2: return 'winter - зима'
+            //     case 3:
+            //     case 4:
+            //     case 5: return 'spring - весна'
+            //     case 6:
+            //     case 7:
+            //     case 8: return 'summer - літо'
+            //     case 9:
+            //     case 10:
+            //     case 11: return 'autumn - осінь'
+            // }
+
+            if (mySeason < 3 || mySeason === 12) 
+                    document.write(`<h2>${mySeason} місяць це Зима(winter). </h3>`)
+                else if (mySeason < 6)
+                    document.write(`<h2>${mySeason} місяць це Весна(spring). </h3>`)
+                else if (mySeason < 9)
+                    document.write(`<h2>${mySeason} місяць це Літо(summer). </h3>`)
+                else 
+                document.write(`<h2>${mySeason} місяць це Осінь(autumn). </h3>`)
+        }
+        
+        //3.Виводимо результат
+        let mySeason = parseInt(prompt('Введiть число вiд 1 до 12.'));
+        //alert(getSeason(mySeason));
+        getSeason(mySeason);
+
+    </script>
+</body>
+</html>
