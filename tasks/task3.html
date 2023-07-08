@@ -6,7 +6,7 @@
     <title>task-3</title>
 </head>
 <body>
-    <h1>Створити окремі функції, які для 4 чисел знаходять:<br>
+    <h1>Створити окремі функції, які для 4 чисел (a=3, b=3, c=3, d=3) знаходять: <br>
         1) суму;<br>
         2) добуток;<br>
         3) середнє арифметичне;<br>
@@ -15,18 +15,15 @@
     <script>
         //1.Вводимо даннi
         function sumNumber(a, b, c, d) {
-            let sum = a + b + c + d;
-            return sum;
+            return a + b + c + d
         }
 
         function multNumber(a, b, c, d) {
-            let mult = a * b * c * d;
-            return mult;
+            return a * b * c * d
         }
 
         function averageNumber(a, b, c, d) {
-            let average = (a + b + c + d) / 4;
-            return average;
+            return (a + b + c + d) / 4
         }
 
         function minNumber(a, b, c, d) {
@@ -34,10 +31,10 @@
         }
 
         // Виводимо результат
-        document.write(`<h2> 1) ${sumNumber(2, 2, 2, 2)} </h2>`);
-        document.write(`<h2> 2) ${multNumber(2, 2, 2, 2)} </h2>`);
-        document.write(`<h2> 3) ${averageNumber(2, 2, 2, 2)} </h2>`);
-        document.write(`<h2> 4) ${minNumber(2, 2, 2, 2)} </h2>`);
+        document.write(`<h2> 1) ${sumNumber(3, 3, 3, 3)} </h2>`);
+        document.write(`<h2> 2) ${multNumber(3, 3, 3, 3)} </h2>`);
+        document.write(`<h2> 3) ${averageNumber(3, 3, 3, 3)} </h2>`);
+        document.write(`<h2> 4) ${minNumber(3, 3, 3, 3)} </h2>`);
 
     </script>
 </body>

@@ -6,14 +6,30 @@
     <title>task-6</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Створити функцію, яка створює таблицю з вказаною кількістю рядків і стовпців (таблиця заповнюється заданим фіксованим повідомленням).</h1>
 
     <script>
+
         //1.Вводимо даннi
+        function createTable(rows, columns, message) {
 
         //2.Знаходимо результат
+        document.write('<table>');
+        for (var i = 0; i < rows; i++) {
+            document.write('<tr>');
+            for (var j = 0; j < columns; j++) {
+            document.write('<td>' + `<h2>${message} </h2>` + '</td>');
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+        }
 
         //3.Виводимо результат
+        let rows = parseInt(prompt('Введіть кількість рядків'))
+        let columns = parseInt(prompt('Введіть кількість стовпців'))
+        let message = prompt('Введіть текст')
+        createTable(rows, columns, message);
 
     </script>
 </body>

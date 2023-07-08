@@ -6,14 +6,29 @@
     <title>task-10</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Дано покази температур (довільна кількість). Розробити функцію, яка дозволить знайти середнє значення для додатних показів температури.</h1>
 
     <script>
-        // Вводимо дані
 
-        // Знаходимо результат
-
-        // Виводимо результат
+        //1.Вводимо даннi
+        function countNegativeTemperatures() {
+            let quantityLowTemp = 0;
+            let minTemperature = -40;
+            let maxTemperature = 40;
+            
+            for (let i = 0; i < 7; i++) {
+                let randTemp = minTemperature + Math.floor(Math.random() * (maxTemperature - minTemperature + 1));
+                if (randTemp > 0) {
+                    
+                    quantityLowTemp++;
+                }
+                document.write(`<h2>Показник температури: ${randTemp}</h2>`);
+            }
+            return quantityLowTemp;
+        }
+        // Виклик функції та виведення результату
+        let negativeCount = countNegativeTemperatures();
+        document.write(`<h2>Кількість додатних показів температури: ${negativeCount}</h2>`);
 
     </script>
 </body>

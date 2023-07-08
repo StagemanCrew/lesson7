@@ -7,15 +7,27 @@
     <title>task-8</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Створити функцію, яка виводить банер (у функцію передаються: зображення, заголовок та посилання, куди переходимо при кліку на зображення (тег img повинен знаходитись у середині тега a: a img src=”шлях” a a)).</h1>
 
 
     <script>
+
         //1.Вводимо даннi
+        function showBanner(imageSrc, title, link) {
+        // Виводимо початок посилання та зображення
+        document.write(`<a href=" ${link} ">`);
+            document.write(`<img style="width: 350px" src="${imageSrc}">`);
+            document.write(`<h2> ${title} </h2>`);
+        document.write('</a>');
+        }
 
         //2.Знаходимо результат
+        let imageSource = '../img/01.jpg';
+        let bannerTitle = 'Pavlov Oleksandr';
+        let bannerLink = 'https://stagemancrew.github.io/portfolio/';
 
         //3.Виводимо результат
+        showBanner(imageSource, bannerTitle, bannerLink);
 
     </script>
 

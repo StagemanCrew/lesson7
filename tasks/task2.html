@@ -13,10 +13,10 @@
 
         //2.Знаходимо результат
         function getDays(days) {
-            if (dayWeek < 6) 
-                document.write(`<h2>${dayWeek} день: робочий. </h3>`)
+            if (days < 6) 
+                document.write(`<h2>${days} день: робочий. </h3>`)
             else 
-                document.write(`<h2>${dayWeek} день: це вихідний. </h3>`)
+                document.write(`<h2>${days} день: це вихідний. </h3>`)
         }
         //3.Виводимо результат
         let dayWeek = parseInt(prompt('Введіть номер дня тижня.'));

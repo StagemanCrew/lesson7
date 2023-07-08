@@ -6,14 +6,38 @@
     <title>task-7</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Створити функцію, яка випадковим чином виводить на екран одне із 4 зображень (шляхи до зображень передаються у функцію).</h1>
 
     <script>
         // Вводимо дані
-
-        // Знаходимо результат
-
+        function displayRandomImage(imagePath1, imagePath2, imagePath3, imagePath4) {
+            // Генеруємо випадкове число від 1 до 4
+            let randomIndex = Math.floor(Math.random() * 4) + 1;
+            // Змінна для збереження шляху до випадкового зображення
+            let randomImagePath;
+            // Визначаємо шлях до випадкового зображення в залежності від згенерованого індексу
+            switch (randomIndex) {
+                case 1:
+                randomImagePath = imagePath1;
+                break;
+                case 2:
+                randomImagePath = imagePath2;
+                break;
+                case 3:
+                randomImagePath = imagePath3;
+                break;
+                case 4:
+                randomImagePath = imagePath4;
+                break;
+            }
+            document.write(`<img style="width: 250px" src="${randomImagePath}">`);
+        }
         // Виводимо результат
+        let image1 = '../img/01.png';
+        let image2 = '../img/02.png';
+        let image3 = '../img/03.png';
+        let image4 = '../img/04.png';
+        displayRandomImage(image1, image2, image3, image4);
 
     </script>
 </body>
